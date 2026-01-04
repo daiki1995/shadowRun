@@ -289,11 +289,11 @@ class Obstacle {
                 ctx.fillRect(this.x + 5, this.y - 10, 30, 10);
             }
         } else {
-            // スライディングで避ける障害物（わかりやすく赤色）
+            // スライディングで避ける障害物
             if (obstacleImages.duckObstacle.complete && obstacleImages.duckObstacle.naturalWidth > 0) {
                 ctx.drawImage(obstacleImages.duckObstacle, this.x, this.y, this.width, this.height);
             } else {
-                ctx.fillStyle = '#ff0000';  // 赤色に変更
+                ctx.fillStyle = '#000';
                 ctx.fillRect(this.x, this.y, this.width, this.height);
                 // パイプ風の装飾
                 ctx.fillRect(this.x - 10, this.y + 10, 10, 10);
